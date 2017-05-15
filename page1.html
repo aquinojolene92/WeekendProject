@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Awesome First Web Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script>
+		function msgBox(mystring)
+		{
+			alert (mystring)
+		}
+		function DoProduct(mystring1, mystring2)
+		{
+			var answer = mystring1 * mystring2
+			alert(answer)
+		}
+		// function GetCrazy(colorchoice)
+		//{
+		//document.body.style.backgroundColor=colorchoice;
+		//}
+	</script>
+</head>
+<body>
+	<h1 class="first">My JavaScript Demo Lab 1</h1>
+		<form>
+			Please enter your name<input name="box1" type="text"/>
+			<input name="submit" type="button" value="Show Me" onClick="msgBox(form.box1.value)"/>
+		</form>
+
+	<h1 class="first">Simple Math:</h1>
+		<form name="form2">
+			<input type="text" name="num1" size="5"/> multiply by:
+			<input type="text" name="num2" size="5"/>
+			<input type="button" name="submit2" value="Multiply" onclick= "DoProduct(form.num1.value,form.num2.value)"/>
+		</form>
+	<h1 class="first">More Math:</h2>
+<center>
+	<form name="form3">
+	<input type="text" name="num1" size="5">
+	</form>
+</center>
+</body>
+</html>
